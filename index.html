@@ -2,13 +2,30 @@
 <html>
   <head>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/app.js" charset="utf-8"></script>
-    <script src="/js/vue.js" charset="utf-8"></script>
     <meta charset="utf-8">
     <title>Vue Playground</title>
   </head>
   <body>
     <h1>Vue Playground</h1>
 
+    <div id="basic">
+      <h3>Basic Element</h3>
+      <p>{{ message }}</p>
+      <hr>
+    </div>
+
+    <div class="class-element">
+      <h3>Class Element</h3>
+      <p>{{ message }}</p>
+      <hr>
+    </div>
+
+    <div class="me">
+      <h3>More data</h3>
+      <p>Hi, my name is {{ firstName }} {{ lastName }}, I am {{ age }} years old and live in {{ town }}</p>
+    </div>
+
+  <script src="/js/vue.js" charset="utf-8"></script>
+  <script src="/js/app.js" charset="utf-8"></script>
   </body>
 </html>
