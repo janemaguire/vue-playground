@@ -22,7 +22,7 @@ var me = new Vue ({
   }
 });
 
-var list = new Vue({
+var list = new Vue ({
     el: '#list',
     data: {
         menu: [
@@ -30,5 +30,27 @@ var list = new Vue({
             {text: 'Avocado toast'},
             {text: 'Flat white'}
         ]
+    }
+});
+
+var todoList = new Vue ({
+    el: '#todoList',
+    data: {
+        todos:
+        [
+            {
+                text: 'Get paid'
+            },
+            {
+                text: 'Eat cake'
+            }
+        ]
+    },
+    methods: {
+        addToList: function () {
+            this.todos.push({
+                text: 'Go mad'
+            });
+        }
     }
 });

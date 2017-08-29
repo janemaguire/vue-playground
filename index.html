@@ -35,6 +35,20 @@
                 {{ item.text }}
             </li>
         </ul>
+        <hr>
+    </div>
+
+    <div id="todoList">
+        <h3>Adding to a list</h3>
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+        <p>Add an item</p>
+        <input type="text" v-model="todos">
+        <button v-on:click="addToList">Add to list</button>
+        <hr>
     </div>
 
     <script src="/js/vue.js" charset="utf-8"></script>
