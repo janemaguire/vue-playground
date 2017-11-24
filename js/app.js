@@ -46,11 +46,13 @@ var helloButton = new Vue ({
 var shoppingList = new Vue ({
     el: '#shoppingList',
     data: {
-        list: [ 'milk', 'eggs' ]
+        list: [ 'milk', 'eggs' ],
+        item: ''
     },
     methods: {
         addToList: function () {
             this.list.push(this.item);
+            delete(this.item);
         }
     }
 });
