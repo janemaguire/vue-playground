@@ -41,18 +41,19 @@
     <div id="hello">
         <h3>Event handler</h3>
         <button v-on:click="sayHello" type="button" name="button">Button</button>
+        <!-- Can also use @click instead of v-on:click -->
         <hr>
     </div>
 
-    <div id="todoList">
+    <div id="shoppingList">
         <h3>Adding to a list</h3>
         <ol>
-            <li v-for="todo in todos">
-                {{ todo.text }}
+            <li v-for="item in list">
+                {{ item }}
             </li>
         </ol>
         <p>Add an item</p>
-        <input v-model="todos">
+        <input id="listInput" v-model="item">
         <button v-on:click="addToList">Add to list</button>
         <hr>
     </div>

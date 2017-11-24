@@ -43,24 +43,14 @@ var helloButton = new Vue ({
     }
 });
 
-var todoList = new Vue ({
-    el: '#todoList',
+var shoppingList = new Vue ({
+    el: '#shoppingList',
     data: {
-        todos:
-        [
-            {
-                text: 'Get paid'
-            },
-            {
-                text: 'Eat cake'
-            }
-        ]
+        list: [ 'milk', 'eggs' ]
     },
     methods: {
         addToList: function () {
-            this.todos.push({
-                text: 'Go mad'
-            });
+            this.list.push(this.item);
         }
     }
 });
