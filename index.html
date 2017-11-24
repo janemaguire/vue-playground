@@ -38,6 +38,12 @@
         <hr>
     </div>
 
+    <div id="hello">
+        <h3>Event handler</h3>
+        <button v-on:click="sayHello" type="button" name="button">Button</button>
+        <hr>
+    </div>
+
     <div id="todoList">
         <h3>Adding to a list</h3>
         <ol>
@@ -46,7 +52,7 @@
             </li>
         </ol>
         <p>Add an item</p>
-        <input type="text" v-model="todos">
+        <input v-model="todos">
         <button v-on:click="addToList">Add to list</button>
         <hr>
     </div>

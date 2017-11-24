@@ -33,6 +33,16 @@ var list = new Vue ({
     }
 });
 
+var helloButton = new Vue ({
+    el: '#hello',
+    data: {},
+    methods: {
+        sayHello: function () {
+            alert("Hello");
+        }
+    }
+});
+
 var todoList = new Vue ({
     el: '#todoList',
     data: {
